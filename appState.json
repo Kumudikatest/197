@@ -1,21 +1,21 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "07e0f890-6b70-4599-b1c9-ca8ac11e0f3c": {
-        "id": "07e0f890-6b70-4599-b1c9-ca8ac11e0f3c",
+      "3130d8ba-c25a-4aae-8a86-22b751f4dd25": {
+        "id": "3130d8ba-c25a-4aae-8a86-22b751f4dd25",
         "parent": null,
         "name": "197",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "6b9a9cb1-6e46-4e4a-9451-c7fedbfb71a6"
+          "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3"
         ],
         "isRemovable": false,
         "filePath": "197"
       },
-      "6b9a9cb1-6e46-4e4a-9451-c7fedbfb71a6": {
-        "id": "6b9a9cb1-6e46-4e4a-9451-c7fedbfb71a6",
-        "parent": "07e0f890-6b70-4599-b1c9-ca8ac11e0f3c",
+      "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3": {
+        "id": "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3",
+        "parent": "3130d8ba-c25a-4aae-8a86-22b751f4dd25",
         "name": "lambda.js",
         "type": "LAMBDA_FILE",
         "isDirectory": false,
@@ -25,7 +25,7 @@
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [
           {
-            "resourceName": "apigusEast1TestAPIpost",
+            "resourceName": "apigusWest1Test197testpost",
             "config": {}
           }
         ],
@@ -37,39 +37,28 @@
       }
     },
     "deletedFiles": [],
-    "rootNode": "07e0f890-6b70-4599-b1c9-ca8ac11e0f3c",
+    "rootNode": "3130d8ba-c25a-4aae-8a86-22b751f4dd25",
     "openFiles": [
-      "6b9a9cb1-6e46-4e4a-9451-c7fedbfb71a6"
+      "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3"
     ],
-    "currentFileId": "6b9a9cb1-6e46-4e4a-9451-c7fedbfb71a6",
+    "currentFileId": "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3",
     "resources": {
-      "apigusEast1TestAPIpost": {
-        "name": "apigusEast1TestAPIpost",
+      "apigusWest1Test197testpost": {
+        "name": "apigusWest1Test197testpost",
         "type": "API_GATEWAY",
         "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "TestAPI",
-          "apiId": "0itznun7w3",
+          "selectedRegion": "us-west-1",
+          "apiMode": 0,
+          "apiName": "Test197",
           "endpointType": "EDGE",
-          "rootResourceId": "h2lelj6j7k",
-          "existingResources": {
-            "/MyLambda": "98nqbj",
-            "/": "h2lelj6j7k",
-            "/testtwospeciallambda": "q4szm3",
-            "/1234": "s8tcca",
-            "/testtwospecialkumutest": "wey3lk"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/",
-          "resourceName": "",
-          "resourceId": "h2lelj6j7k",
+          "resourceMode": 0,
+          "resourceName": "test",
+          "resourcePath": "/test",
           "restMethod": "POST",
           "proxyIntegration": false,
           "enableCORS": true,
-          "stageMode": 1,
-          "stageName": "test",
-          "stageDeploymentId": "1kay6f"
+          "stageMode": 0,
+          "stageName": "test1"
         },
         "globallyEditable": false
       }
@@ -87,16 +76,16 @@
     "packageJSON": {
       "dependencies": {}
     },
-    "lambdaId": "6b9a9cb1-6e46-4e4a-9451-c7fedbfb71a6"
+    "lambdaId": "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3"
   },
   "PROJECT_META": {
     "projectName": "197",
     "projectDescription": "Retesting",
     "projectVersion": "1.0.0",
-    "projectRegion": "us-east-1",
+    "projectRegion": "us-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1546408086331
+    "lastSave": 1546409137987
   },
   "VCS_STATE": {
     "provider": "GitHub",
