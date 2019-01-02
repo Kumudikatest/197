@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "197/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [
           {
             "resourceName": "apigusWest1Test197testpost",
@@ -33,6 +33,14 @@
           "runtime": "nodejs8.10",
           "timeout": 60,
           "memory": 128
+        },
+        "testCases": {
+          "0445c0d3-40b5-4c86-9e24-99267f47a6fb": {
+            "id": "0445c0d3-40b5-4c86-9e24-99267f47a6fb",
+            "name": "Unnamed event",
+            "functionId": "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
         }
       }
     },
@@ -85,7 +93,7 @@
     "projectRegion": "us-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1546409137987
+    "lastSave": 1546410967672
   },
   "VCS_STATE": {
     "provider": "GitHub",
