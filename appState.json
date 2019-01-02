@@ -66,10 +66,10 @@
           "resourceId": "h2lelj6j7k",
           "restMethod": "POST",
           "proxyIntegration": false,
-          "enableCORS": false,
+          "enableCORS": true,
           "stageMode": 1,
           "stageName": "test",
-          "stageDeploymentId": "s8r2uy"
+          "stageDeploymentId": "1kay6f"
         },
         "globallyEditable": false
       }
@@ -96,7 +96,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1546407832343
+    "lastSave": 1546408086331
   },
   "VCS_STATE": {
     "provider": "GitHub",
