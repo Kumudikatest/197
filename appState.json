@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "197/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "let AWS = require('aws-sdk');\nconst s3 = new AWS.S3();\n\nexports.handler = function (event, context, callback) {\n    s3.listObjects({\n        'Bucket': 'cloud9-ktest',\n        'MaxKeys': 10,\n        'Prefix': ''\n    }).promise()\n        .then(data => {\n            console.log(data);           // successful response\n            /*\n            data = {\n             Contents: [\n                {\n                   ETag: \"\\\"70ee1738b6b21e2c8a43f3a5ab0eee71\\\"\",\n                   Key: \"example1.jpg\",\n                   LastModified: <Date Representation>,\n                   Owner: {\n                      DisplayName: \"myname\",\n                      ID: \"12345example25102679df27bb0ae12b3f85be6f290b936c4393484be31bebcc\"\n                   },\n                   Size: 11,\n                   StorageClass: \"STANDARD\"\n                },\n                {...}\n            */\n        })\n        .catch(err => {\n            console.log(err, err.stack); // an error occurred\n        });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "triggers": [
           {
             "resourceName": "apigusWest1Test197testpost",
@@ -31,7 +31,7 @@
         ],
         "config": {
           "runtime": "nodejs8.10",
-          "timeout": 60,
+          "timeout": 152,
           "memory": 128
         },
         "testCases": {
@@ -69,6 +69,17 @@
           "stageName": "test1",
           "mode": 0
         }
+      },
+      "s3cloud9Ktest": {
+        "name": "s3cloud9Ktest",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-west-1",
+            "name": "cloud9-ktest"
+          }
+        }
       }
     },
     "customTemplate": {
@@ -86,7 +97,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "javascript",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     },
     "lambdaId": "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3"
   },
@@ -97,7 +116,7 @@
     "projectRegion": "us-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1559737388417
+    "lastSave": 1559737718958
   },
   "VCS_STATE": {
     "provider": "GitHub",
