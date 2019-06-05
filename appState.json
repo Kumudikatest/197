@@ -31,7 +31,7 @@
         ],
         "config": {
           "runtime": "nodejs8.10",
-          "timeout": 152,
+          "timeout": 20,
           "memory": 128
         },
         "testCases": {
@@ -116,7 +116,7 @@
     "projectRegion": "us-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1559737718958
+    "lastSave": 1559737823855
   },
   "VCS_STATE": {
     "provider": "GitHub",
