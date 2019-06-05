@@ -17,7 +17,7 @@
         "id": "bf3e3ec7-7cf7-4541-95d0-cf1c519461f3",
         "parent": "3130d8ba-c25a-4aae-8a86-22b751f4dd25",
         "name": "lambda.js",
-        "type": "LAMBDA_FILE",
+        "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
@@ -71,6 +71,10 @@
         "globallyEditable": false
       }
     },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
     "envVariables": [
       {
         "lambdaId": "all",
@@ -93,7 +97,7 @@
     "projectRegion": "us-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1546416503117
+    "lastSave": 1559731628904
   },
   "VCS_STATE": {
     "provider": "GitHub",
