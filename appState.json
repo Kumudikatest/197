@@ -58,7 +58,7 @@
           "selectedRegion": "us-west-1",
           "apiMode": 0,
           "apiName": "Test197",
-          "endpointType": "EDGE",
+          "endpointType": "REGIONAL",
           "resourceMode": 0,
           "resourceName": "test",
           "resourcePath": "/test",
@@ -66,9 +66,9 @@
           "proxyIntegration": false,
           "enableCORS": true,
           "stageMode": 0,
-          "stageName": "test1"
-        },
-        "globallyEditable": false
+          "stageName": "test1",
+          "mode": 0
+        }
       }
     },
     "customTemplate": {
@@ -97,7 +97,7 @@
     "projectRegion": "us-west-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1559731628904
+    "lastSave": 1559737388417
   },
   "VCS_STATE": {
     "provider": "GitHub",
